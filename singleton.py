@@ -23,21 +23,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# class Singleton:
-#
-#     def __new__(cls):
-#
-#         if not hasattr(cls, 'instance'):
-#             cls.instance = super(Singleton, cls).__new__(cls)
-#
-#         return cls.instance
-#
-# singleton = Singleton()
-#
-# another_singleton = Singleton()
-#
-# print(singleton is another_singleton)
-#
-# singleton.ony
