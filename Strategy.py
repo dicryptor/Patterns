@@ -19,17 +19,23 @@ class Strategy(metaclass=abc.ABCMeta):
 class ConcreteStrategyA(Strategy):
 
     def algorithm_interface(self):
-        pass
+        print("Strategy A used")
 
 class ConcreteStrategyB(Strategy):
 
     def algorithm_interface(self):
-        pass
+        print("Strategy B used")
 
 def main():
     concrete_strategy_a = ConcreteStrategyA()
+    concrete_strategy_b = ConcreteStrategyB()
+
     context = Context(concrete_strategy_a)
     context.context_interface()
+
+    context = Context(concrete_strategy_b)
+    context.context_interface()
+
 
 if __name__ == "__main__":
     main()
